@@ -23,7 +23,7 @@ public class DBConnection {
 	// Local settings
 	public static final String LOCAL_USERNAME = "oracleusr";
 	public static final String LOCAL_PASSWORD = "oracle";
-	public static final String LOCAL_DEFAULT_CONNECT_DESCRIPTOR = "140.86.1.189:1521/PDB1.gse00000649.oraclecloud.internal";
+	public static final String LOCAL_DEFAULT_CONNECT_DESCRIPTOR = "140.86.38.144:1521/PDB1.gse00001941.oraclecloud.internal";
 //	public static final String LOCAL_DEFAULT_CONNECT_DESCRIPTOR = "localhost:1521/PDB1.identity-domain.oraclecloud.internal";
 
 	private static Connection connection = null;
