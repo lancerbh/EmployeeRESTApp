@@ -3,32 +3,32 @@
 
 package br.com.meetup.bh.entity;
 
-//import javax.persistence.Column;
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-//@Entity
+@Entity
 public class Employee {
 
-//	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO)
-//	@Column(name="ID")
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="ID")
 	private final long id;
-//	@Column(name="FIRSTNAME")
+	@Column(name="FIRSTNAME")
 	private final String firstName;
-//	@Column(name="LASTNAME")
+	@Column(name="LASTNAME")
 	private final String lastName;
-//	@Column(name="EMAIL")
+	@Column(name="EMAIL")
 	private final String email;
-//	@Column(name="PHONE")
+	@Column(name="PHONE")
 	private final String phone;
-//	@Column(name="BIRTHDATE")
+	@Column(name="BIRTHDATE")
 	private final String birthDate;
-//	@Column(name="TITLE")
+	@Column(name="TITLE")
 	private final String title;
-//	@Column(name="DEPARTMENT")
+	@Column(name="DEPARTMENT")
 	private final String department;
 
 	public Employee() {

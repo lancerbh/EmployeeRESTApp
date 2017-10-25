@@ -17,9 +17,9 @@ import br.com.meetup.bh.dao.EmployeeDAO;
 import br.com.meetup.bh.dao.impl.EmployeeDAOImpl;
 import br.com.meetup.bh.entity.Employee;
 
-@CrossOrigin
-@RestController
-@RequestMapping("/employees")
+//@CrossOrigin
+//@RestController
+//@RequestMapping("/employees")
 public class EmployeeController {
 
 	// private EmployeeDAO edao = new EmployeeMockDAOImpl();
