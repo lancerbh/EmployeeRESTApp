@@ -5,6 +5,7 @@
 	<artifactId>EmployeeRESTApp</artifactId>
 	<version>1.0</version>
 	<name>EmployeeRESTApp</name>
+	<packaging>war</packaging>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -26,6 +27,22 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -62,21 +79,10 @@
 					</jvmArguments>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<!-- <version>1.5.0</version> -->
-				<executions>
-					<execution>
-						<goals>
-							<goal>java</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<mainClass>br.com.meetup.bh.App</mainClass>
-				</configuration>
-			</plugin>
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>exec-maven-plugin</artifactId> 
+				<executions> <execution> <goals> <goal>java</goal> </goals> </execution> 
+				</executions> <configuration> <mainClass>br.com.meetup.bh.App</mainClass> 
+				</configuration> </plugin> -->
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<!-- <version>2.6</version> -->
@@ -84,7 +90,7 @@
 					<descriptors>
 						<descriptor>bin.xml</descriptor>
 					</descriptors>
-					<finalName>${project.build.finalName}-dist</finalName>
+					<!-- <finalName>${project.build.finalName}-dist</finalName> -->
 					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 				<executions>
