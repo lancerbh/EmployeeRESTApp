@@ -4,7 +4,10 @@ build:
     # Build Spring Boot Sample application
     - script:
         name: Maven install
-        code: mvn install
+        code: mvn install:install-file -Dfile=/pipeline/source/lib/ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -DgeneratePom=true
+
+# mvn install
+
 push:
   steps:
     # Push to public docker repo
