@@ -5,6 +5,7 @@
    <artifactId>EmployeeRESTApp</artifactId>
    <version>1.0</version>
    <name>EmployeeRESTApp</name>
+   <description>Sample Spring Boot + Docker + Wercker</description>
    <parent>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
