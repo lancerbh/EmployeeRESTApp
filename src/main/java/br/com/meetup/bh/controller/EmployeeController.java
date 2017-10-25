@@ -14,19 +14,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.meetup.bh.dao.EmployeeDAO;
-import br.com.meetup.bh.dao.impl.EmployeeDAOImpl;
+import br.com.meetup.bh.dao.impl.EmployeeMockDAOImpl;
 import br.com.meetup.bh.entity.Employee;
 
-//@CrossOrigin
-//@RestController
-//@RequestMapping("/employees")
+@CrossOrigin
+@RestController
+@RequestMapping("/employees")
 public class EmployeeController {
 
-//	private EmployeeDAO edao = new EmployeeMockDAOImpl();
-	private EmployeeDAO edao = new EmployeeDAOImpl();
+	private EmployeeDAO edao = new EmployeeMockDAOImpl();
+//	private EmployeeDAO edao = new EmployeeDAOImpl();
 
 	// Get all employees
-//	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public Employee[] getAll() {
 
 		List<Employee> matchList = edao.getAllEmployees();
