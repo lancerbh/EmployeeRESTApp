@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import br.com.meetup.bh.entity.Employee;
 
-@RepositoryRestResource(collectionResourceRel = "meetup", path = "meetup")
+@RepositoryRestResource
 public interface EmployeeRepository extends PagingAndSortingRepository<Employee, Long> {
 
 }
