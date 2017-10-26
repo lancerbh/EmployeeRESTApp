@@ -23,5 +23,5 @@ restart-occs:
         occs_password: $OCCS_PASSWORD
         rest_server_url: $REST_SERVER_URL
         function: $FUNCTION
-        service_id: $SERVICE_NAME
+        docker_image_name: $DOCKER_IMAGE_NAME
         debug: true
