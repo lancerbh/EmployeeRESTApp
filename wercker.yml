@@ -24,3 +24,4 @@ restart-occs:
         rest_server_url: $REST_SERVER_URL
         function: $FUNCTION
         service_id: $SERVICE_NAME
+        debug: true
